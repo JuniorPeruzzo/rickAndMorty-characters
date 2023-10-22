@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/characters-card.css">
+    <link rel="stylesheet" href="styles/components/filters.css">
+    <link rel="stylesheet" href="styles/components/paginate.css">
+    <link rel="stylesheet" href="styles/components/modal.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <title>Rick and Morty</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="image__portal--left" src="assets/portal-left.jpg" alt="Imagem de um portal">
+        <img class="image__logo" src="assets/logo.svg" alt="Logo rick and morty">
+        <img class="image__portal--right" src="assets/portal-right.jpg" alt="Imagem rick and morty saindo de um portal">
+    </header>
+
+    <main>
+        <section>
+            <div class="filter">
+                <div class="filter__fields">
+                    <input type="search" id="name" placeholder="Buscar Nome" class="filter__name">
+                    <select name="status" id="status" class="filter__status">
+                        <option value="" default>Status</option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Morto</option>
+                        <option value="unknown">Desconhecido</option>
+                    </select>
+                </div>
+                <div id="filters-button">
+                    <button type="submit" class="filter__button--element">Filtrar</button>
+                </div>
+
+
+            </div>
+            <div class="characters__notFound">
+            </div>
+            <div class="characters__container">
+            </div>
+            <div class="modal">
+                <dialog class="dialog__modal">
+                    <figure>
+                        <img src="./assets/rick-and-morty-modal.png" alt="Imagem da série Rick & Morty">
+                        <p class="exit__modalButton">x</p>
+                        <figcaption>
+                            <p>Criada por Justin Roiland e Dan Harmon, Rick & Morty é uma série animada de comédia que mostra as aventuras interdimensionais de Rick, a mente mais brilhante da galáxia, e seu neto Morty.</p>
+                            <p>Com sua arma capaz de criar portais para viajar no tempo-espaço, Rick leva Morty para explorar todos as absurdas formas de vida que o universo é capaz de sustentar.</p>
+                            <p>Apesar de genial, Rick sofre de alcoolismo e possui uma relação conflituosa com sua família, fruto da sua visão cínica da vida e seu egoísmo. Por outro lado, Morty está longe de ter o intelecto do seu avô, mas é o único capaz de fazê-lo ser um pouco mais gentil.</p>
+                            <p>Entre momentos hilários e reflexões interessantes sobre a vida, Rick & Morty arrancam gargalhadas e ainda rende ótimas discussões filosóficas.</p>
+                        </figcaption>
+                    </figure>
+                    <a href="https://www.rottentomatoes.com/tv/rick_and_morty" target="_blank" class="modal___button">Clique aqui para mais informações</a>
+                </dialog>
+            </div>
+            <div class="controls__paginate">
+                <div class="first__page">&#171;</div>
+                <div class="prev__page">&#60;</div>
+                <div class="numbers__page">
+                    <div id="current__page-number"></div>
+                </div>
+                <div class="next__page">&#62;</div>
+                <div class="last__page">&#187;</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__button">
+            <button type="submit" class="footer__button--element" id="show-modal">Mais detalhes sobre a série</button>
+        </div>
+        <p class="copyrigth">&copy; Gilmar Peruzzo Junior - 2023</p>
+    </footer>
+</body>
+<script src="./js/script.js" type="module"></script>
+
+</html>

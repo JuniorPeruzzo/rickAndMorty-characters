@@ -1,0 +1,64 @@
+@import "../style.css";
+
+.dialog__modal {
+	background-color: var(--white-color);
+	font-family: var(--default-font);
+	box-shadow: 0 0 10px var(--black-color);
+	font-size: 1rem;
+	border-radius: 10px;
+	border: none;
+	max-width: 600px;
+	padding: 20px;
+	text-align: center;
+}
+
+.dialog__modal::backdrop {
+	backdrop-filter: blur(3px);
+	transition: 0.5s;
+}
+
+.exit__modalButton {
+	color: var(--lightGray-color);
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.exit__modalButton:hover {
+	cursor: pointer;
+}
+
+.dialog__modal img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.dialog__modal p {
+	margin-bottom: 10px;
+}
+
+.dialog__modal figure {
+	margin-bottom: 25px;
+}
+
+.modal___button {
+	overflow: hidden;
+	background-color: var(--main-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	text-decoration: none;
+	font-size: 1rem;
+	border-radius: 12px;
+	padding: 0.7rem 1rem;
+	width: 30vw;
+}
+
+.modal___button:hover {
+	cursor: pointer;
+	box-shadow: 0 0 5px var(--black-color);
+	transition: 0.3s;
+}

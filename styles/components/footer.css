@@ -1,0 +1,32 @@
+@import "../style.css";
+
+.footer__button--element {
+	overflow: hidden;
+	border: 2px solid var(--filter-color);
+	background-color: var(--main-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	font-size: 1rem;
+	border-radius: 12px;
+	padding: 0.7rem 1rem;
+	width: 30vw;
+}
+
+.footer__button--element:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.copyrigth {
+	font-family: var(--default-font);
+	color: var(--black-color);
+	font-size: 0.813rem;
+	margin-top: 1.25rem;
+}
+
+@media (max-width: 834px) {
+	.footer__button--element {
+		width: 60vw;
+	}
+}

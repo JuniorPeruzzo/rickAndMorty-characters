@@ -1,0 +1,48 @@
+@import "../style.css";
+
+.controls__paginate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--default-font);
+	padding: 2rem 0 1rem 0;
+	color: var(--white-color);
+}
+
+.controls__paginate div {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.25rem;
+}
+
+.controls__paginate div:not(.numbers__page),
+.controls__paginate div.numbers__page div {
+	width: 40px;
+	height: 40px;
+}
+
+.numbers__page {
+	border-radius: 20px;
+}
+
+.numbers__page:hover {
+	transition: 0.5s;
+	color: var(--contrast-color);
+}
+
+.first__page:hover,
+.prev__page:hover,
+.next__page:hover,
+.last__page:hover {
+	transition: 0.3s;
+	color: var(--filter-color);
+	background-color: var(--lightGray-color);
+}
+.first__page,
+.prev__page,
+.next__page,
+.last__page {
+	border-radius: 20px;
+}

@@ -1,0 +1,80 @@
+@import "../style.css";
+
+.filter {
+	display: flex;
+	margin: 2rem 0 2rem 0;
+	justify-content: space-between;
+}
+
+.filter__fields {
+	display: flex;
+	gap: 20px;
+}
+
+.filter__name {
+	border: 2px solid var(--filter-color);
+	background-color: var(--filter-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	border-radius: 12px;
+	font-size: 1rem;
+	padding: 0.7rem 1rem;
+	width: 20vw;
+}
+
+.filter__name::placeholder {
+	color: var(--white-color);
+	font-size: 1rem;
+	background: url("../../assets/search-icon.png") no-repeat right center;
+}
+
+.filter__name:hover {
+	box-shadow: 0 0 10px var(--black-color);
+	transition: 0.3s;
+}
+
+.filter__status {
+	border: 2px solid var(--filter-color);
+	background-color: var(--filter-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	font-size: 1rem;
+	border-radius: 12px;
+	padding: 0.7rem 1rem;
+	width: 14vw;
+}
+
+.filter__button--element {
+	overflow: hidden;
+	border: 2px solid var(--filter-color);
+	background-color: var(--filter-color);
+	color: var(--white-color);
+	font-family: var(--default-font);
+	font-size: 1rem;
+	border-radius: 12px;
+	padding: 0.7rem 1rem;
+	width: 9vw;
+}
+
+.filter__status:hover,
+.filter__button--element:hover {
+	cursor: pointer;
+	box-shadow: 0 0 10px var(--black-color);
+	transition: 0.3s;
+}
+
+@media (max-width: 834px) {
+	.filter__name {
+		width: 25vw;
+	}
+	.filter__name::placeholder {
+		font-size: 0.875rem;
+		background: none;
+	}
+
+	.filter__status,
+	.filter__button--element {
+		font-size: 0.875rem;
+		width: 20vw;
+	}
+}
